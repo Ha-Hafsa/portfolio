@@ -18,6 +18,9 @@
 
     .row {
       margin-bottom: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @include respond(phone) {
         margin-bottom: 4rem;
@@ -26,6 +29,8 @@
 
     &__text {
       text-align: left;
+      max-width: 520px;
+      margin: 0 auto;
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
@@ -51,6 +56,7 @@
 
     &__image {
       width: 90%;
+      max-width: 800px;
       margin: 0 auto;
 
       @include respond(tab-land) {
